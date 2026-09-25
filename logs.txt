@@ -1,0 +1,370 @@
+Script started on 2026-09-25 22:51:39+00:00 [TERM="xterm-256color" TTY="/dev/pts/1" COLUMNS="100" LINES="27"]
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ ls
+[?2004llogs.txt
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ mkdir testingFiles
+[?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ cp[K[Ktar [K[K[K[Kwhoami[K[K[K[K[K[Kch[K[Kdf -h
+[?2004lFilesystem        Size  Used Avail Use% Mounted on
+devtmpfs          4.0M     0  4.0M   0% /dev
+tmpfs             457M     0  457M   0% /dev/shm
+tmpfs             183M  464K  183M   1% /run
+efivarfs          128K  2.7K  121K   3% /sys/firmware/efi/efivars
+/dev/nvme0n1p1    8.0G  1.8G  6.2G  23% /
+tmpfs             457M     0  457M   0% /tmp
+/dev/nvme0n1p128   10M  1.3M  8.7M  13% /boot/efi
+tmpfs              92M     0   92M   0% /run/user/1000
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ top -b[Kn -1
+[?2004ltop: bad iterations argument '-1'
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ top =[K-n 1
+[?2004l[?1h=[?25l[H[2J(B[mtop - 22:52:47 up 1 day,  1:49,  4 users,  load average: 0.00, 0.01, 0.00(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 112 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 111 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.0 (B[m[39;49mus,(B[m[39;49m[1m  0.0 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m100.0 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+MiB Mem :(B[m[39;49m[1m    913.2 (B[m[39;49mtotal,(B[m[39;49m[1m    258.3 (B[m[39;49mfree,(B[m[39;49m[1m    193.8 (B[m[39;49mused,(B[m[39;49m[1m    461.1 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+MiB Swap:(B[m[39;49m[1m      0.0 (B[m[39;49mtotal,(B[m[39;49m[1m      0.0 (B[m[39;49mfree,(B[m[39;49m[1m      0.0 (B[m[39;49mused.(B[m[39;49m[1m    579.1 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND                      (B[m[39;49m[K
+(B[m      1 root      20   0  173584  17912  10868 S   0.0   1.9   0:06.32 systemd                      (B[m[39;49m[K
+(B[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd                     (B[m[39;49m[K
+(B[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release       (B[m[39;49m[K
+(B[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-rcu_gp             (B[m[39;49m[K
+(B[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-sync_wq            (B[m[39;49m[K
+(B[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-kvfree_rcu_reclaim (B[m[39;49m[K
+(B[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-slub_flushwq       (B[m[39;49m[K
+(B[m      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-netns              (B[m[39;49m[K
+(B[m     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0H-events_highpri  (B[m[39;49m[K
+(B[m     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworker/R-mm_percpu_wq       (B[m[39;49m[K
+(B[m     14 root      20   0       0      0      0 S   0.0   0.0   0:00.38 ksoftirqd/0                  (B[m[39;49m[K
+(B[m     15 root      20   0       0      0      0 I   0.0   0.0   0:01.05 rcu_preempt                  (B[m[39;49m[K
+(B[m     16 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_exp_par_gp_kthread_work+ (B[m[39;49m[K
+(B[m     17 root      20   0       0      0      0 S   0.0   0.0   0:00.03 rcu_exp_gp_kthread_worker    (B[m[39;49m[K
+(B[m     18 root      rt   0       0      0      0 S   0.0   0.0   0:00.30 migration/0                  (B[m[39;49m[K
+(B[m     19 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0                      (B[m[39;49m[K
+(B[m     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1                      (B[m[39;49m[K
+(B[m     21 root      rt   0       0      0      0 S   0.0   0.0   0:00.34 migration/1                  (B[m[39;49m[K
+(B[m     22 root      20   0       0      0      0 S   0.0   0.0   0:00.39 ksoftirqd/1                  (B[m[39;49m[K
+(B[m     24 root       0 -20       0      0      0 I   0.0   0.0   0:00.12 kworker/1:0H-xfs-log/nvme0n+ (B[m[39;49m[K[?1l>[28;1H
+[?12l[?25h[K]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ ifconfig
+[?2004lens5: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 9001
+        inet 172.31.29.97  netmask 255.255.240.0  broadcast 172.31.31.255
+        inet6 fe80::8ff:d5ff:febf:fdd1  prefixlen 64  scopeid 0x20<link>
+        ether 0a:ff:d5:bf:fd:d1  txqueuelen 1000  (Ethernet)
+        RX packets 81241  bytes 107605502 (102.6 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 75983  bytes 8352893 (7.9 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 12  bytes 1020 (1020.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 12  bytes 1020 (1020.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ ps auc[Kx
+[?2004lUSER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  1.9 173584 17912 ?        Ss   Sep24   0:06 /usr/lib/systemd/systemd --switch
+root           2  0.0  0.0      0     0 ?        S    Sep24   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    Sep24   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-rcu_gp]
+root           5  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-sync_wq]
+root           6  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-kvfree_rcu_reclaim]
+root           7  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-slub_flushwq]
+root           8  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-netns]
+root          10  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/0:0H-events_highpri]
+root          13  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-mm_percpu_wq]
+root          14  0.0  0.0      0     0 ?        S    Sep24   0:00 [ksoftirqd/0]
+root          15  0.0  0.0      0     0 ?        I    Sep24   0:01 [rcu_preempt]
+root          16  0.0  0.0      0     0 ?        S    Sep24   0:00 [rcu_exp_par_gp_kthread_worker/0]
+root          17  0.0  0.0      0     0 ?        S    Sep24   0:00 [rcu_exp_gp_kthread_worker]
+root          18  0.0  0.0      0     0 ?        S    Sep24   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    Sep24   0:00 [cpuhp/0]
+root          20  0.0  0.0      0     0 ?        S    Sep24   0:00 [cpuhp/1]
+root          21  0.0  0.0      0     0 ?        S    Sep24   0:00 [migration/1]
+root          22  0.0  0.0      0     0 ?        S    Sep24   0:00 [ksoftirqd/1]
+root          24  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/1:0H-kblockd]
+root          27  0.0  0.0      0     0 ?        S    Sep24   0:00 [kdevtmpfs]
+root          28  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-inet_frag_wq]
+root          29  0.0  0.0      0     0 ?        I    Sep24   0:00 [rcu_tasks_kthread]
+root          30  0.0  0.0      0     0 ?        I    Sep24   0:00 [rcu_tasks_rude_kthread]
+root          31  0.0  0.0      0     0 ?        I    Sep24   0:00 [rcu_tasks_trace_kthread]
+root          32  0.0  0.0      0     0 ?        S    Sep24   0:00 [kauditd]
+root          34  0.0  0.0      0     0 ?        S    Sep24   0:00 [khungtaskd]
+root          35  0.0  0.0      0     0 ?        S    Sep24   0:00 [oom_reaper]
+root          37  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-writeback]
+root          38  0.0  0.0      0     0 ?        S    Sep24   0:02 [kcompactd0]
+root          39  0.0  0.0      0     0 ?        SN   Sep24   0:00 [khugepaged]
+root          40  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-kblockd]
+root          41  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-blkcg_punt_bio]
+root          42  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-kintegrityd]
+root          43  0.0  0.0      0     0 ?        S    Sep24   0:00 [irq/9-acpi]
+root          45  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-tpm_dev_wq]
+root          46  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-md_bitmap]
+root          47  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-edac-poller]
+root          48  0.0  0.0      0     0 ?        S    Sep24   0:00 [watchdogd]
+root          49  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-quota_events_unbound]
+root          51  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/1:1H]
+root          60  0.0  0.0      0     0 ?        S    Sep24   0:00 [kswapd0]
+root          77  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-xfsalloc]
+root          79  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-xfs_mru_cache]
+root          80  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-cryptd]
+root          81  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-kthrotld]
+root         139  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-nvme-wq]
+root         140  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-nvme-reset-wq]
+root         142  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-nvme-delete-wq]
+root         167  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-mld]
+root         171  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-ipv6_addrconf]
+root         172  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/0:1H-kblockd]
+root         173  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-kstrp]
+root         560  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/u9:0]
+root        1057  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-xfs-buf/nvme0n1p1]
+root        1058  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-xfs-conv/nvme0n1p1]
+root        1059  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-xfs-reclaim/nvme0n1p1]
+root        1060  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-xfs-blockgc/nvme0n1p1]
+root        1061  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-xfs-inodegc/nvme0n1p1]
+root        1062  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-xfs-log/nvme0n1p1]
+root        1063  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-xfs-cil/nvme0n1p1]
+root        1064  0.0  0.0      0     0 ?        S    Sep24   0:23 [xfsaild/nvme0n1p1]
+root        1110  0.0  2.8  62456 26960 ?        Ss   Sep24   0:02 /usr/lib/systemd/systemd-journald
+root        1548  0.0  1.1  32756 11144 ?        Ss   Sep24   0:00 /usr/lib/systemd/systemd-udevd
+systemd+    1556  0.0  1.6  23508 15564 ?        Ss   Sep24   0:00 /usr/lib/systemd/systemd-resolved
+root        1561  0.0  0.2  21936  2664 ?        S<sl Sep24   0:00 /sbin/auditd
+root        1575  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-rpciod]
+root        1576  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-xprtiod]
+root        1603  0.0  0.0      0     0 ?        I<   Sep24   0:00 [kworker/R-ena]
+root        1702  0.0  0.7  17092  7324 ?        Ss   Sep24   0:00 /usr/bin/systemd-inhibit --what=h
+root        1705  0.0  0.3  81436  3124 ?        Ssl  Sep24   0:02 /usr/sbin/irqbalance --foreground
+libstor+    1706  0.0  0.2   2788  2024 ?        Ss   Sep24   0:00 /usr/bin/lsmd -d
+root        1709  0.0  0.8  17596  8340 ?        Ss   Sep24   0:00 /usr/lib/systemd/systemd-homed
+root        1710  0.0  1.1  19580 10924 ?        Ss   Sep24   0:00 /usr/lib/systemd/systemd-logind
+dbus        1711  0.0  0.4   8532  4060 ?        Ss   Sep24   0:00 /usr/bin/dbus-broker-launch --sco
+systemd+    1712  0.0  1.1 237684 10332 ?        Ss   Sep24   0:00 /usr/lib/systemd/systemd-networkd
+dbus        1723  0.0  0.3   5396  3060 ?        S    Sep24   0:00 dbus-broker --log 4 --controller 
+root        1736  0.0  0.1   2700  1868 ?        S    Sep24   0:00 /usr/sbin/acpid -f
+root        1739  0.0  0.4 282732  3900 ?        Ssl  Sep24   0:00 /usr/sbin/gssproxy -D
+root        1884  0.0  2.1 1242300 20060 ?       Ssl  Sep24   0:02 /usr/bin/amazon-ssm-agent
+root        1889  0.0  0.7   9600  6824 ?        Ss   Sep24   0:00 sshd: /usr/sbin/sshd -D [listener
+root        1891  0.0  0.2   4792  2672 ?        Ss   Sep24   0:00 /usr/sbin/atd -f
+root        1893  0.0  0.2 221376  1940 tty1     Ss+  Sep24   0:00 /sbin/agetty -o -p -- \u --noclea
+root        1897  0.0  0.2 221420  1988 ttyS0    Ss+  Sep24   0:00 /sbin/agetty -o -p -- \u --keep-b
+chrony      1918  0.0  0.4  87152  3828 ?        S    Sep24   0:01 /usr/sbin/chronyd -F 2
+root        6868  0.0  0.7  17092  7252 ?        Ss   Sep24   0:00 /usr/lib/systemd/systemd-userdbd
+root       68106  0.0  0.0      0     0 ?        I    20:14   0:00 [kworker/u8:3-events_unbound]
+root       70537  0.0  0.0      0     0 ?        I    21:35   0:00 [kworker/u8:1-events_unbound]
+root       71295  0.0  1.1  15856 10640 ?        Ss   21:58   0:00 sshd-session: ec2-user [priv]
+ec2-user   71582  0.0  1.5  22796 14372 ?        Ss   21:58   0:00 /usr/lib/systemd/systemd --user
+ec2-user   71584  0.0  0.9 174924  9168 ?        S    21:58   0:00 (sd-pam)
+ec2-user   71591  0.0  0.7  16124  7264 ?        S    21:58   0:00 sshd-session: ec2-user@pts/0
+ec2-user   71592  0.0  0.5 224096  5032 pts/0    Ss+  21:58   0:00 -bash
+ec2-user   71707  0.0  0.4 224340  4496 ?        Ss   21:59   0:00 tmux new -s myNewSession
+ec2-user   71708  0.0  0.5 224096  5060 pts/2    Ss+  21:59   0:00 -bash
+root       72100  0.0  0.0      0     0 ?        I    22:09   0:00 [kworker/0:2-events]
+ec2-user   72603  0.0  0.2 223196  2756 ?        Ss   22:21   0:00 ping amazon.com
+root       73225  0.0  0.0      0     0 ?        I    22:32   0:00 [kworker/1:1-cgroup_free]
+root       73226  0.0  0.0      0     0 ?        I    22:32   0:00 [kworker/u8:0-kvfree_rcu_reclaim]
+root       73227  0.0  1.1  15848 10704 ?        Ss   22:33   0:00 sshd-session: ec2-user [priv]
+ec2-user   73230  0.0  0.7  16116  7228 ?        R    22:33   0:00 sshd-session: ec2-user@pts/1
+ec2-user   73231  0.0  0.5 224096  5024 pts/1    Ss   22:33   0:00 -bash
+root       73322  0.0  0.0      0     0 ?        I    22:36   0:00 [kworker/0:1-cgroup_free]
+root       73680  0.0  0.0      0     0 ?        I    22:46   0:00 [kworker/1:0-events]
+root       73743  0.0  0.0      0     0 ?        I    22:48   0:00 [kworker/0:0-cgroup_free]
+root       73747  0.0  0.7  17452  7364 ?        S    22:49   0:00 systemd-userwork: waiting...
+root       73749  0.0  0.7  17452  7256 ?        S    22:50   0:00 systemd-userwork: waiting...
+root       73750  0.0  0.7  17452  7288 ?        S    22:50   0:00 systemd-userwork: waiting...
+ec2-user   73813  0.0  0.2 221428  2072 pts/1    R+   22:51   0:00 script logs.txt
+ec2-user   73815  0.0  0.5 224088  5028 pts/3    Ss   22:51   0:00 bash -i
+root       73837  0.0  0.0      0     0 ?        I    22:52   0:00 [kworker/1:2-events]
+ec2-user   73901  0.0  0.3 223608  2980 pts/3    R+   22:53   0:00 ps aux
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ host google.com[K[K[K[K[K[K[K[K[K[Kamazon.com
+[?2004lamazon.com has address 98.87.170.74
+amazon.com has address 98.87.170.71
+amazon.com has address 98.82.161.185
+amazon.com mail is handled by 5 amazon-smtp.amazon.com.
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ scp --h[K[K[K[K --help
+[?2004lscp: unknown option -- -
+usage: scp [-346ABCOpqRrsTv] [-c cipher] [-D sftp_server_path] [-F ssh_config]
+           [-i identity_file] [-J destination] [-l limit] [-o ssh_option]
+           [-P port] [-S program] [-X sftp_option] source ... target
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ scp -J
+[?2004lscp: option requires an argument -- J
+usage: scp [-346ABCOpqRrsTv] [-c cipher] [-D sftp_server_path] [-F ssh_config]
+           [-i identity_file] [-J destination] [-l limit] [-o ssh_option]
+           [-P port] [-S program] [-X sftp_option] source ... target
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ -[Kscp --[Ko
+[?2004lscp: option requires an argument -- o
+usage: scp [-346ABCOpqRrsTv] [-c cipher] [-D sftp_server_path] [-F ssh_config]
+           [-i identity_file] [-J destination] [-l limit] [-o ssh_option]
+           [-P port] [-S program] [-X sftp_option] source ... target
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ ping -c 5[K4 google.com
+[?2004lPING google.com (142.251.163.139) 56(84) bytes of data.
+64 bytes from wv-in-f139.1e100.net (142.251.163.139): icmp_seq=1 ttl=106 time=1.48 ms
+64 bytes from wv-in-f139.1e100.net (142.251.163.139): icmp_seq=2 ttl=106 time=1.49 ms
+64 bytes from wv-in-f139.1e100.net (142.251.163.139): icmp_seq=3 ttl=106 time=1.49 ms
+64 bytes from wv-in-f139.1e100.net (142.251.163.139): icmp_seq=4 ttl=106 time=1.49 ms
+
+--- google.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3004ms
+rtt min/avg/max/mdev = 1.477/1.485/1.490/0.005 ms
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ uname -a
+[?2004lLinux ip-172-31-29-97.ec2.internal 6.18.48-109.150.amzn2023.x86_64 #2 SMP PREEMPT_DYNAMIC Wed Sep 16 22:54:13 UTC 2026 x86_64 x86_64 x86_64 GNU/Linux
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ cat exFile.txt
+[?2004lcat: exFile.txt: No such file or directory
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ cat [K[K[K[Kcp file[K[K[K[K[K[K[Kch[K[Kecho "Checker1" > "[Kfile1.st[K[Ktxt
+[?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ cat file1.txt
+[?2004lChecker1
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ echo "check1[K2" > file2.txt[K[K[K[K[K.[K2.[Ker[Kx.txt
+[?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ cat fi[K[K[K[K[Kp file1.tt[Kxt.[K file.txt[K[K[K[K2t[Kex.txt
+[?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ cat file2.txt
+[?2004lcat: file2.txt: No such file or directory
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ cat file2.txt[K[K[K[Kexx[K.txt
+[?2004lChecker1
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ du -sh
+[?2004l124K	.
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ chmod 8[K6[K400 file1.txt
+[?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ chmod 8[K6[K755 t[Kfile1.txt
+[?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ head [K[K[K[K[Khead [K [K[K[K[K[Kecho [K[K[K[Kcho "[K[K[K[K[K[Ktop -b -n 1 | head n[K-n 10 > newTopOutput.t xt
+[?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ ca[Kat newTopOutput.txt
+[?2004ltop - 22:59:32 up 1 day,  1:56,  4 users,  load average: 0.00, 0.00, 0.00
+Tasks: 112 total,   1 running, 111 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni,100.0 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
+MiB Mem :    913.2 total,    255.4 free,    195.6 used,    462.3 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    577.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  173584  17912  10868 S   0.0   1.9   0:06.34 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ cat newTopOutput.txt[Kcat newTopOutput.txttop -b -n 1 | head -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pchmod 755 file1.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctop -b -n 1 | head -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -n 10 > newTopOutput.txt[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -n 10 > newTopOutput.txt [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[C[1@ [1@ta -n 10 > newTopOutput.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ top -b -n 1 | tail -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pcat newTopOutput.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l  73743 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0-cgroup_free
+  73813 ec2-user  20   0  221428   2072   1932 S   0.0   0.2   0:00.02 script
+  73815 ec2-user  20   0  224088   5028   3580 S   0.0   0.5   0:00.04 bash
+  73837 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/1:2-events
+  73970 root      20   0   17452   7288   6264 S   0.0   0.8   0:00.00 systemd-userwor
+  73971 root      20   0   17452   7344   6320 S   0.0   0.8   0:00.00 systemd-userwor
+  74029 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:1-cgroup_free
+  74098 root      20   0   17452   7268   6244 S   0.0   0.8   0:00.00 systemd-userwor
+  74099 ec2-user  20   0  223932   3528   2908 R   0.0   0.4   0:00.00 top
+  74100 ec2-user  20   0  221424   1868   1748 S   0.0   0.2   0:00.00 tail
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ cat newTopOutput.txttop -b -n 1 | tail -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pcat newTopOutput.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctop -b -n 1 | head -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C> newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+
+[?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ top -b -n 1 | head -n 10 >> newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pcat newTopOutput.txt
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[?2004l  73743 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0-cgroup_free
+  73813 ec2-user  20   0  221428   2072   1932 S   0.0   0.2   0:00.02 script
+  73815 ec2-user  20   0  224088   5028   3580 S   0.0   0.5   0:00.04 bash
+  73837 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/1:2-events
+  73970 root      20   0   17452   7288   6264 S   0.0   0.8   0:00.00 systemd-userwor
+  73971 root      20   0   17452   7344   6320 S   0.0   0.8   0:00.00 systemd-userwor
+  74029 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:1-cgroup_free
+  74098 root      20   0   17452   7268   6244 S   0.0   0.8   0:00.00 systemd-userwor
+  74099 ec2-user  20   0  223932   3528   2908 R   0.0   0.4   0:00.00 top
+  74100 ec2-user  20   0  221424   1868   1748 S   0.0   0.2   0:00.00 tail
+top - 23:00:18 up 1 day,  1:57,  4 users,  load average: 0.05, 0.01, 0.00
+Tasks: 112 total,   1 running, 111 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 96.8 id,  0.0 wa,  0.0 hi,  0.0 si,  3.2 st
+MiB Mem :    913.2 total,    255.4 free,    195.6 used,    462.3 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    577.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  173584  17912  10868 S   0.0   1.9   0:06.34 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ head newTopOutput.txt
+[?2004l  73743 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0-cgroup_free
+  73813 ec2-user  20   0  221428   2072   1932 S   0.0   0.2   0:00.02 script
+  73815 ec2-user  20   0  224088   5028   3580 S   0.0   0.5   0:00.04 bash
+  73837 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/1:2-events
+  73970 root      20   0   17452   7288   6264 S   0.0   0.8   0:00.00 systemd-userwor
+  73971 root      20   0   17452   7344   6320 S   0.0   0.8   0:00.00 systemd-userwor
+  74029 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:1-cgroup_free
+  74098 root      20   0   17452   7268   6244 S   0.0   0.8   0:00.00 systemd-userwor
+  74099 ec2-user  20   0  223932   3528   2908 R   0.0   0.4   0:00.00 top
+  74100 ec2-user  20   0  221424   1868   1748 S   0.0   0.2   0:00.00 tail
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ rm file2.txt
+[?2004lrm: cannot remove 'file2.txt': No such file or directory
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ t[Krm file2.[Kex.txt
+[?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ dig amazon.com
+[?2004l
+; <<>> DiG 9.18.50 <<>> amazon.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 58536
+;; flags: qr rd ra; QUERY: 1, ANSWER: 3, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;amazon.com.			IN	A
+
+;; ANSWER SECTION:
+amazon.com.		300	IN	A	98.82.161.185
+amazon.com.		300	IN	A	98.87.170.74
+amazon.com.		300	IN	A	98.87.170.71
+
+;; Query time: 10 msec
+;; SERVER: 172.31.0.2#53(172.31.0.2) (UDP)
+;; WHEN: Fri Sep 25 23:01:57 UTC 2026
+;; MSG SIZE  rcvd: 87
+
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ wget gt[K[Khttp://speedtest.tele2.net.[K/1m[KMB.zip
+[?2004l--2026-09-25 23:03:01--  http://speedtest.tele2.net/1MB.zip
+Resolving speedtest.tele2.net (speedtest.tele2.net)... 90.130.70.73, 2a00:800:1010::1
+Connecting to speedtest.tele2.net (speedtest.tele2.net)|90.130.70.73|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1048576 (1.0M) [application/zip]
+Saving to: ‘1MB.zip’
+
+1MB.zip                    0%[                                   ]       0  --.-KB/s               1MB.zip                    4%[>                                  ]  47.84K   238KB/s               1MB.zip                   14%[====>                              ] 148.24K   368KB/s               1MB.zip                   30%[=========>                         ] 309.44K   513KB/s               1MB.zip                   59%[===================>               ] 607.81K   735KB/s               1MB.zip                   88%[=============================>     ] 901.93K   878KB/s               1MB.zip                  100%[==================================>]   1.00M   977KB/s    in 1.0s    
+
+2026-09-25 23:03:03 (977 KB/s) - ‘1MB.zip’ saved [1048576/1048576]
+
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ ls -la
+[?2004ltotal 1080
+drwxr-xr-x. 4 ec2-user ec2-user     110 Sep 25 23:03 [0m[01;34m.[0m
+drwx------. 8 ec2-user ec2-user   16384 Sep 25 22:49 [01;34m..[0m
+drwxr-xr-x. 6 ec2-user ec2-user     103 Sep 25 22:50 [01;34m.git[0m
+-rw-rw-r--. 1 ec2-user ec2-user 1048576 Apr  8  2024 [01;31m1MB.zip[0m
+-rwxr-xr-x. 1 ec2-user ec2-user       9 Sep 25 22:56 [01;32mfile1.txt[0m
+-rw-r--r--. 1 ec2-user ec2-user   32768 Sep 25 23:03 logs.txt
+-rw-rw-r--. 1 ec2-user ec2-user    1554 Sep 25 23:00 newTopOutput.txt
+drwxrwxr-x. 2 ec2-user ec2-user       6 Sep 25 22:52 [01;34mtestingFiles[0m
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ chwon[K[K[Kown @[K#[K$user[K[K[Ke[K[Kec2-User[K[K[Ku[K[Kuser[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kls -l file1.txt
+[?2004l-rwxr-xr-x. 1 ec2-user ec2-user 9 Sep 25 22:56 [0m[01;32mfile1.txt[0m
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ chown #[K$[K4[K$USER file1.txt
+[?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ ls l[K[K[K[Ktar -cvf testingArchive [K.tar testingFiles
+[?2004ltestingFiles/
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ ls -la testingArchive.tart[K
+[?2004l-rw-rw-r--. 1 ec2-user ec2-user 10240 Sep 25 23:06 [0m[01;31mtestingArchive.tar[0m
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ tar -xc[Kvf testingArchie[Kve.tar
+[?2004ltestingFiles/
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ tar [K -tvf T[KtestingARchi[K[K[Kr[K[Krac[K[Kchive.tar
+[?2004ldrwxrwxr-x ec2-user/ec2-user 0 2026-09-25 22:52 testingFiles/
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ ifconfig
+[?2004lens5: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 9001
+        inet 172.31.29.97  netmask 255.255.240.0  broadcast 172.31.31.255
+        inet6 fe80::8ff:d5ff:febf:fdd1  prefixlen 64  scopeid 0x20<link>
+        ether 0a:ff:d5:bf:fd:d1  txqueuelen 1000  (Ethernet)
+        RX packets 94859  bytes 109858232 (104.7 MiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 89782  bytes 9637969 (9.1 MiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 12  bytes 1020 (1020.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 12  bytes 1020 (1020.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ exit
+[?2004lexit
+
+Script done on 2026-09-25 23:09:19+00:00 [COMMAND_EXIT_CODE="0"]
