@@ -1,0 +1,20 @@
+  73743 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0-cgroup_free
+  73813 ec2-user  20   0  221428   2072   1932 S   0.0   0.2   0:00.02 script
+  73815 ec2-user  20   0  224088   5028   3580 S   0.0   0.5   0:00.04 bash
+  73837 root      20   0       0      0      0 I   0.0   0.0   0:00.01 kworker/1:2-events
+  73970 root      20   0   17452   7288   6264 S   0.0   0.8   0:00.00 systemd-userwor
+  73971 root      20   0   17452   7344   6320 S   0.0   0.8   0:00.00 systemd-userwor
+  74029 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:1-cgroup_free
+  74098 root      20   0   17452   7268   6244 S   0.0   0.8   0:00.00 systemd-userwor
+  74099 ec2-user  20   0  223932   3528   2908 R   0.0   0.4   0:00.00 top
+  74100 ec2-user  20   0  221424   1868   1748 S   0.0   0.2   0:00.00 tail
+top - 23:00:18 up 1 day,  1:57,  4 users,  load average: 0.05, 0.01, 0.00
+Tasks: 112 total,   1 running, 111 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.0 us,  0.0 sy,  0.0 ni, 96.8 id,  0.0 wa,  0.0 hi,  0.0 si,  3.2 st
+MiB Mem :    913.2 total,    255.4 free,    195.6 used,    462.3 buff/cache
+MiB Swap:      0.0 total,      0.0 free,      0.0 used.    577.2 avail Mem 
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND
+      1 root      20   0  173584  17912  10868 S   0.0   1.9   0:06.34 systemd
+      2 root      20   0       0      0      0 S   0.0   0.0   0:00.02 kthreadd
+      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_workqueue_release
