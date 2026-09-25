@@ -181,17 +181,17 @@ amazon.com has address 98.87.170.71
 amazon.com has address 98.82.161.185
 amazon.com mail is handled by 5 amazon-smtp.amazon.com.
 ]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ scp --h[K[K[K[K --help
-[?2004lscp: unknown option -- -
+[?2004lscp: unknown option -- -
 usage: scp [-346ABCOpqRrsTv] [-c cipher] [-D sftp_server_path] [-F ssh_config]
            [-i identity_file] [-J destination] [-l limit] [-o ssh_option]
            [-P port] [-S program] [-X sftp_option] source ... target
 ]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ scp -J
-[?2004lscp: option requires an argument -- J
+[?2004lscp: option requires an argument -- J
 usage: scp [-346ABCOpqRrsTv] [-c cipher] [-D sftp_server_path] [-F ssh_config]
            [-i identity_file] [-J destination] [-l limit] [-o ssh_option]
            [-P port] [-S program] [-X sftp_option] source ... target
 ]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ -[Kscp --[Ko
-[?2004lscp: option requires an argument -- o
+[?2004lscp: option requires an argument -- o
 usage: scp [-346ABCOpqRrsTv] [-c cipher] [-D sftp_server_path] [-F ssh_config]
            [-i identity_file] [-J destination] [-l limit] [-o ssh_option]
            [-P port] [-S program] [-X sftp_option] source ... target
@@ -237,7 +237,7 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    577.2 avail Mem
 ]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ cat newTopOutput.txt[Kcat newTopOutput.txttop -b -n 1 | head -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[22Pchmod 755 file1.txt
 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctop -b -n 1 | head -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -n 10 > newTopOutput.txt[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C -n 10 > newTopOutput.txt [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P
 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[C[1@ [1@ta -n 10 > newTopOutput.txt [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ci -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cl -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-
+
 [?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ top -b -n 1 | tail -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pcat newTopOutput.txt
 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
 [?2004l  73743 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0-cgroup_free
@@ -252,7 +252,7 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    577.2 avail Mem
   74100 ec2-user  20   0  221424   1868   1748 S   0.0   0.2   0:00.00 tail
 ]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ cat newTopOutput.txttop -b -n 1 | tail -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pcat newTopOutput.txt
 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ctop -b -n 1 | head -n 10 > newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C> newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
-
+
 [?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ top -b -n 1 | head -n 10 >> newTopOutput.txt[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[21Pcat newTopOutput.txt
 [K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
 [?2004l  73743 root      20   0       0      0      0 I   0.0   0.0   0:00.00 kworker/0:0-cgroup_free
@@ -290,7 +290,7 @@ MiB Swap:      0.0 total,      0.0 free,      0.0 used.    577.2 avail Mem
 [?2004lrm: cannot remove 'file2.txt': No such file or directory
 ]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ t[Krm file2.[Kex.txt
 [?2004l]0;ec2-user@ip-172-31-29-97:~/DistributedComputing_C00548053[?2004h[ec2-user@ip-172-31-29-97 DistributedComputing_C00548053]$ dig amazon.com
-[?2004l
+[?2004l
 ; <<>> DiG 9.18.50 <<>> amazon.com
 ;; global options: +cmd
 ;; Got answer:
